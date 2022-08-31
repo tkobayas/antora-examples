@@ -1,0 +1,17 @@
+site:
+  title: Example Documentation
+  url: https://www.example.org/docs
+  start_page: example::getting-started/index.adoc
+  robots: allow
+content:
+  sources:
+    - url: ..
+      branches: [HEAD]
+      start_path: attribute-example/src
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+antora:
+  extensions:
+    - '@antora/lunr-extension'
